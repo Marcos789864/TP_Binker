@@ -1,0 +1,54 @@
+.container
+{
+  background-color: #f4f6f8;
+  position: fixed;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+}
+
+.containernav {
+  background-color: #f8f8f8;
+
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-left {
+  margin-right: auto;
+}
+
+.nav-right {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-right li {
+  list-style-type: none;
+}
+
+
+
+
+
+.container ul li
+{
+  display: inline;
+  margin: 1rem;
+}
+
+

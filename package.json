@@ -1,0 +1,9 @@
+{
+"name": "binker",
+"version": "0.1.0",
+  "homepage": "https://Marcos789864.github.io/TP_Binker.git",
+  "private":true,
+  "dependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
