@@ -3,6 +3,8 @@ import Card from './components/Card'
 import Boton from './components/Boton'
 import Navbar from './views/Navbar'
 import Inicio from './views/Inicio'
+import AcercadeMi from './views/Acerca de Mi' 
+import Conociminetos from './views/Conocimientos'
 
 function App() {
   return (
@@ -11,17 +13,19 @@ function App() {
       
       <section id='Inicio'>
     <Inicio/>
+      </section >
+      <section id='AcercadeMi'>
+      <AcercadeMi/>
       </section>
       <section>
-      </section>
-      <section>
+        <Conociminetos/>
       </section>
       <section>
       </section>
       <section>
       </section>
       <section id='Contacto'>
-        <p>Hola</p>
+        
       </section>
     </>
   );

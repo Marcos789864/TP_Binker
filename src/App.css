@@ -37,14 +37,84 @@ nav ul.navbar li a:hover {
 
 .containerW
 {
- 
+ display: flex;
   padding: 30px;
   background: #f4f6f8;
   width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .Wave
 {
   width: 100%;
+}
+
+.containerContenido{
+
+margin-bottom: 1rem;
+}
+
+h5
+{
+  color: #525b64;
+}
+
+.ContainerCentrado {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+}
+
+.ContainerAcercaInfo {
+  max-width: 300px;
+}
+
+.ContainerImg {
+  margin-left: 20px; 
+}
+
+.ContainerImg img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .ContainerCentrado {
+      flex-direction: column; 
+      align-items: center; 
+  }
+
+  .ContainerImg {
+      margin-left: 0; 
+      margin-top: 20px; 
+      
+  }
+}
+
+.Img{
+
+  border-radius: 15px;
+}
+
+
+.ResolucionImg{
+
+  width: 250px;
+  height: auto;
+  margin-right: 2rem;
+}
+
+h1
+{
+  display: flex;
+  justify-content: center;
+}
+
+.ContainerCentrado h2
+{
+  display: flex;
+  justify-content: center;
+  margin-right: 3rem;
 }
 
