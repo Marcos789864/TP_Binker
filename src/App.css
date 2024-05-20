@@ -1,54 +1,50 @@
-.container
-{
-  background-color: #f4f6f8;
-  position: fixed;
-  width: 100%;
-}
-
 .container {
   width: 100%;
+  background-color: black;
 }
 
-.containernav {
-  background-color: #f8f8f8;
-
-}
-
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar {
+nav ul.navbar {
   list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-.nav-left {
-  margin-right: auto;
+nav ul.navbar li {
+  float: left;
 }
+
+nav ul.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul.navbar li a:hover {
+  background-color: #333;
+}
+
 
 .nav-right {
-  display: flex;
-  gap: 20px;
+  float: right;
 }
 
 .nav-right li {
-  list-style-type: none;
-}
-
-
-
-
-
-.container ul li
-{
   display: inline;
-  margin: 1rem;
 }
 
+.containerW
+{
+ 
+  padding: 30px;
+  background: #f4f6f8;
+  width: 100%;
+}
+
+.Wave
+{
+  width: 100%;
+}
 
