@@ -38,6 +38,10 @@ nav ul.navbar li a:hover {
 .containerW
 {
  display: flex;
+ 
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
+  word-break: break-all; 
   padding: 30px;
   background: #f4f6f8;
   width: 100%;
@@ -162,4 +166,58 @@ h1
   width:450px;
   height: auto;
   margin-right: 1rem;
+}
+
+
+
+
+.container2 {
+  display: flex;
+  width: 20%;
+  border: 2px solid #ccc;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+label {
+  font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+textarea {
+  height: 100px;
+}
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+.Container3 {
+  width: 20%; 
+  margin-left: 2rem; 
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
+  word-break: break-all; 
 }

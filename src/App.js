@@ -35,7 +35,7 @@ function App() {
         <Certificaciones/>
       </section>
       <section id='Contacto'>
-        
+        <Contacto/>
       </section>
     </>
   );
