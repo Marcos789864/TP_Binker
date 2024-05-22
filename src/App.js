@@ -1,4 +1,5 @@
 import './App.css';
+import React, { useState, useEffect } from 'react';
 import Card from './components/Card'
 import Boton from './components/Boton'
 import Navbar from './views/Navbar'
@@ -12,10 +13,29 @@ import Contacto from './views/Contacto';
 
 
 function App() {
+  
+
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowButton(window.scrollY > 100); // Muestra el botón después de cierto desplazamiento
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <>
       <Navbar/>
-      
       <section id='Inicio'>
     <Inicio/>
       </section >
@@ -37,6 +57,8 @@ function App() {
       <section id='Contacto'>
         <Contacto/>
       </section>
+       <button className={showButton ? "scrollToTopButton" : "hidden"} onClick={scrollToTop}><p>↑</p></button>
+
     </>
   );
 }

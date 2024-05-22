@@ -37,21 +37,31 @@ nav ul.navbar li a:hover {
 
 .containerW
 {
- display: flex;
- 
-  word-wrap: break-word; 
-  overflow-wrap: break-word; 
-  word-break: break-all; 
+  display: flex;
+
   padding: 30px;
   background: #f4f6f8;
   width: 100%;
   justify-content: center;
   align-items: center;
+  opacity: 0; /* Inicialmente oculto */
+  transform: translateY(20px); /* Desplazado hacia abajo */
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .Wave
 {
   width: 100%;
+}
+.containerW2 {
+  opacity: 0; /* Inicialmente oculto */
+  transform: translateY(20px); /* Desplazado hacia abajo */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Transición suave */
+}
+
+.containerW2.loaded {
+  opacity: 1; /* Mostrar cuando cargado */
+  transform: translateY(0); /* Sin desplazamiento */
 }
 
 .containerContenido{
@@ -217,7 +227,55 @@ input[type="submit"]:hover {
 .Container3 {
   width: 20%; 
   margin-left: 2rem; 
-  word-wrap: break-word; 
-  overflow-wrap: break-word; 
-  word-break: break-all; 
+  
 }
+@media screen and (max-width: 738px) {
+  .container2 {
+    width: 80%; /* Cambia el ancho al 80% en dispositivos con una anchura de pantalla igual o inferior a 738px */
+  }
+
+  .Container3
+  {
+    width: 80%;
+  }
+}
+
+
+
+.containerW.loaded {
+  opacity: 1; /* Mostrar cuando cargado */
+  transform: translateY(0); /* Sin desplazamiento */
+}
+
+
+
+
+.scrollToTopButton {
+  
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+ 
+}
+
+.scrollToTopButton:hover {
+  background-color: #0056b3;
+}
+
+.scrollToTopButton p
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 6px;
+}
+
